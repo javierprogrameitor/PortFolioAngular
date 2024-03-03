@@ -1,0 +1,254 @@
+<nav class="bg-slate-500 p-4 rounded-xl">
+    <div class="container mx-auto">
+        <div class="flex flex-col md:flex-row justify-around items-center navbar rounded-3xl bg-slate-600 ">
+            <div class="mb-4 md:mb-0">
+                <a class="btn btn-ghost text-3xl font-extrabold text-slate-900">PortFolio</a>
+            </div>
+            <div class="flex justify-center md:justify-end w-full md:w-auto">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a class="text-slate-900 text-xl font-extrabold" href="#">Home</a></li>
+                    <li><a class="text-slate-900 text-xl font-extrabold" href="#">Contact</a></li>
+                    <li>
+                        <details>
+                            <summary class="text-xl font-extrabold text-slate-900">
+                                Parent
+                            </summary>
+                            <ul class="p-2 bg-slate-500 rounded-t-none text-xl font-extrabold text-slate-900">
+                                <li><a href="#">Link 1</a></li>
+                                <li><a href="#">Link 2</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
+            </div>
+
+            <label class="swap swap-rotate font-extrabold text-slate-900">
+                <!-- this hidden checkbox controls the state -->
+                <input type="checkbox" class="theme-controller" value="cyberpunk" />
+                <!-- sun icon -->
+                <svg class="swap-on fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                        d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" />
+                </svg>
+                <!-- moon icon -->
+                <svg class="swap-off fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                        d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
+                </svg>
+            </label>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section--------------------------------------------------------------------------------------------- -->
+<section class="bg-slate-200 text-slate-500">
+    <div class="hero ">
+        <div class="hero-content flex flex-col lg:flex-row items-center justify-center lg:justify-between">
+            <img src="../../../assets/Javier.png" class="lg:w-80 lg:h-80 rounded-full border-4 border-white " />
+            <div class="m-3 text-center lg:text-left">
+                <p class="text-xl font-extrabold">Hi, I'm Javier</p>
+                <h1 class="text-5xl font-extrabold text-slate-950">Developer</h1>
+                <p class="text-xl font-extrabold">I am a developer with experience in Angular and Node, Java EE,
+                    Javascritpt and I specialize in building web applications.</p>
+                <!--   <button class="m-3 btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-outline btn-active">Summary</button> -->
+                <!-- You can open the modal using ID.showModal() method -->
+                <button class="m-3 btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-outline btn-active"
+                    onclick="my_modal_4.showModal()">Summary</button>
+                <dialog id="my_modal_4" class="modal">
+                    <div class="modal-box w-11/12 max-w-5xl">
+                        <h3 class="font-extrabold text-lg">Hello!</h3>
+                        <p class="py-4 font-extrabold">Process in reconstruction, when you have more knowledge a new
+                            page will open.
+                            Click the button below to close</p>
+                        <div class="modal-action">
+                            <form method="dialog">
+                                <!-- if there is a button, it will close the modal -->
+                                <button class="btn font-extrabold">Close</button>
+                            </form>
+                        </div>
+                    </div>
+                </dialog>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- About Section -->
+<section class="py-20">
+    <div class="container  flex flex-col items-center">
+        <h2 class="text-3xl font-extrabold mb-8">About Me : </h2>
+        <div class="w-full max-w-md">
+            <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-2xl font-extrabold">
+                    Hi, I'm Javier Gomez
+                </div>
+                <div class="collapse-content font-extrabold">
+                    <p>A programmer in the process of learning, but with a long career </p>
+                </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-2xl font-extrabold">
+                    My Specialties
+                </div>
+                <div class="collapse-content font-extrabold">
+                    <p>I specialize in building web applications using technologies like Angular, Java, and
+                        Node.js</p>
+                </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-2xl font-extrabold">
+                    My Hobbies
+                </div>
+                <div class="collapse-content font-extrabold">
+                    <p>In my free time, I enjoy contributing to open-source projects and learning new
+                        technologies</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="flex flex-wrap  justify-center">
+        <img src="../../../assets/Css3.svg" alt="Drink" />
+        <img src="../../../assets/Java.svg" alt="Drink" />
+        <img src="../../../assets/Angular.svg" alt="Drink" />
+        <img src="../../../assets/Html5.svg" alt="Drink" />
+        <img src="../../../assets/Js.svg" alt="Drink" />
+        <img src="../../../assets/PHP.svg" alt="Drink" />
+        <img src="../../../assets/Python.svg" alt="Drink" />
+        <img src="../../../assets/Sql.svg" alt="Drink" />
+    </div>
+
+</section>
+
+<!-- Portfolio Section -->
+<section>
+    <div class="carousel carousel-end rounded-box">
+        <div class="h-96 carousel-item">
+            <img src="../../../assets/Backend1.png" alt="Drink" />
+        </div>
+        <div class="h-96 carousel-item">
+            <img src="../../../assets/Angular1.png" alt="Drink" />
+        </div>
+        <div class="h-96 carousel-item">
+            <img src="../../../assets/ImagenJavaSE.png" alt="Drink" />
+        </div>
+        <div class="h-96 carousel-item">
+            <img src="../../../assets/Python.png" alt="Drink" />
+        </div>
+        <div class="h-96 carousel-item">
+            <img src="../../../assets/BBDD.png" alt="Drink" />
+        </div>
+        <div class="h-96 carousel-item">
+            <img src="../../../assets/Frontend1.png" alt="Drink" />
+        </div>
+        <div class="h-96 carousel-item">
+            <img src="../../../assets/Programing1.png" alt="Drink" />
+        </div>
+
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="p-20 flex flex-col items-center">
+    <div>
+        <h2 class="text-3xl font-extrabold mb-8">Contact Me</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-40 ml-16">
+            <div>
+                <h3 class="text-xl font-extrabold mb-2">Get in Touch</h3>
+                <p class="mb-4">Have a project in mind or just want to say hi? Feel free to send me a message.</p>
+                <form>
+                    <div class="mb-4">
+                        <label for="name" class="block mb-2 font-extrabold">Name</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Your Name">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block mb-2 font-extrabold">Email</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="Your Email">
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block mb-2 font-extrabold">Message</label>
+                        <textarea id="message" name="message" class="form-textarea" rows="3"
+                            placeholder="Your Message"></textarea>
+                    </div>
+                    <button class="btn btn-wide sm:btn-sm md:btn-md lg:btn-lg btn-outline btn-active">Send</button>
+                </form>
+            </div>
+            <div class="space-y-4">
+                <h3 class="text-xl font-extrabold mb-2">Contact Information</h3>
+                <p><span class="font-extrabold">Email:</span> javierprogrameitor.gmail</p>
+                <p><span class="font-extrabold">Phone:</span>665467980</p>
+                <p><span class="font-extrabold">Address:</span> Cuba nº9, Talavera`s Real, Spain</p>
+                <div class="skeleton w-32 h-32"></div>
+            </div>
+        </div>
+    </div>
+    <div class="divider divider-neutral"></div>
+    <div class="stats shadow">
+
+        <div class="stat">
+            <div class="stat-figure text-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    class="inline-block w-8 h-8 stroke-current">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                    </path>
+                </svg>
+            </div>
+            <div class="stat-title">Total Likes</div>
+            <div class="stat-value text-primary">25.6K</div>
+            <div class="stat-desc">21% more than last month</div>
+        </div>
+
+        <div class="stat">
+            <div class="stat-figure text-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    class="inline-block w-8 h-8 stroke-current">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+            </div>
+            <div class="stat-title">Page Views</div>
+            <div class="stat-value text-secondary">2.6M</div>
+            <div class="stat-desc">21% more than last month</div>
+        </div>
+
+        <div class="stat">
+            <div class="stat-figure text-secondary">
+                <div class="avatar online">
+                    <div class="w-16 rounded-full">
+                        <img src="../../../assets/Javier.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="stat-value">86%</div>
+            <div class="stat-title">Tasks done</div>
+            <div class="stat-desc text-secondary">31 tasks remaining</div>
+        </div>
+
+    </div>
+
+
+    <h2 class="text-3xl font-extrabold m-8">Rating : </h2>
+    <div class="rating">
+        <input type="radio" name="rating-1" class="mask mask-star" />
+        <input type="radio" name="rating-1" class="mask mask-star" checked />
+        <input type="radio" name="rating-1" class="mask mask-star" />
+        <input type="radio" name="rating-1" class="mask mask-star" />
+        <input type="radio" name="rating-1" class="mask mask-star" />
+    </div>
+    
+
+</section>
+
+
+<!-- Footer -->
+<footer class="bg-slate-900 text-white py-8">
+    <div class="container mx-auto text-center">
+        <p class="font-extrabold">&copy; 2024 My Portfolio. All rights reserved.</p>
+    </div>
+</footer>
